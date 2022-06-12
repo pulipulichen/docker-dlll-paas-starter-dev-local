@@ -1,0 +1,36 @@
+{
+  "scripts": {
+    "build-push": "sh ./build-push.sh",
+    "local-up": "docker-compose build && docker-compose run app bash",
+    "init": "node ./dev_local/index.js",
+    "build_up": "node ./dev_local/index.js",
+    "build": "node ./dev_local/index.js build",
+    "up": "node ./dev_local/index.js up",
+    "purge": "node ./dev_local/purge.js",
+    "publish": "node ./dev_local/publish.js",
+    "test": "node test/helpers/RunCypress.js false",
+    "test_noexit": "node test/helpers/RunCypress.js false",
+    "test_exit": "node test/helpers/RunCypress.js true",
+    "test_deploy-clean-all": "node dev_local/cypress/helpers/RunCypressDeploy.js clean-all",
+    "test_deploy-clean": "node dev_local/cypress/helpers/RunCypressDeploy.js clean",
+    "test_deploy-check": "node dev_local/cypress/helpers/RunCypressDeploy.js check",
+    "test_deploy": "node dev_local/cypress/helpers/RunCypressDeploy.js create"
+  },
+  "dependencies": {
+    "@types/lodash": "4.14.182",
+    "7zip-min": "1.4.2",
+    "copy": "^0.0.1",
+    "copyfiles": "2.4.1",
+    "cross-zip": "4.0.0",
+    "cypress": "9.6.0",
+    "@pulipuli.chen/fast-glob": "3.2.13",
+    "fs-extra": "10.1.0",
+    "js-yaml": "4.1.0",
+    "json-to-pretty-yaml": "1.2.2",
+    "rimraf": "3.0.2",
+    "unzipper": "0.10.11"
+  },
+  "devDependencies": {
+    "cypress-fail-fast": "3.4.1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 400000,
+  "screenshotOnRunFailure": false,
+  "video": false,
+  "redirectionLimit": 300
+}

@@ -1,0 +1,9 @@
+{
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 60000,
+  "redirectionLimit": 300,
+  "retries": {
+    "runMode": 10,
+    "openMode": 0
+  }
+}
